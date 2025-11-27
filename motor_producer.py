@@ -10,10 +10,10 @@ from kafka.admin import NewPartitions
 from kafka.errors import KafkaError
 from kafka.admin import NewTopic
 
-KAFKA_BROKERS_OUT = '127.0.0.38.9092, 127.0.0.189:9092'
+KAFKA_BROKERS_OUT = '127.0.0.38.9092, 127.0.0.189:9092, 127.0.0.199:9092'
 KAFKA_TOPIC_OUT  = 'topic_sensor_input'
 
-KAFKA_BROKERS_IN = '127.0.0.189:9092, 127.0.0.199.9092'
+KAFKA_BROKERS_IN = '127.0.0.189:9092, 127.0.0.199.9092, 127.0.0.38:9092'
 KAFKA_TOPIC_IN  = 'topic_create_delete'
 
 # Global structures to manage threads

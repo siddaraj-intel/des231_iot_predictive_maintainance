@@ -6,7 +6,7 @@ import json
 import os
 from kafka import KafkaProducer
 
-KAFKA_MSG_BROKER = '127.0.0.189:9092'
+KAFKA_MSG_BROKER = '127.0.0.189:9092, 127.0.0.199:9092, 127.0.0.38:9092'
 
 def produce_start(producer, topic, csv_file, start, end, motor_id, cmd):
 	csv_file = os.path.abspath(csv_file)
