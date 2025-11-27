@@ -1,0 +1,12 @@
+[Unit]
+Description=KAFKA_BROKER
+After=network-online.target remote-fs.target
+
+[Service]
+User=root
+ExecStart=/bin/bash /root/tmux_start_kafka.sh start
+RemainAfterExit=yes
+ExecStop=/bin/bash  /root/tmux_start_kafka.sh stop
+
+[Install]
+WantedBy=multi-user.target
